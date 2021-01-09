@@ -22,7 +22,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
+/* For nav section */
 
 .nav-container {
     font-family: 'Poppins', sans-serif;
@@ -203,3 +203,16 @@ a {
     transform: translateY(0);
 }
 
+/* Home-page section */
+
+.home-container {
+
+}
+
+.intro-text {
+    font-size: 36px;
+}
+
+span {
+    font-family: 'Monoton', 'cursive';
+}
