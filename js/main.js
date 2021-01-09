@@ -22,10 +22,10 @@ function burgerToggler(){
 
 //change the theme of the website
 let mode = localStorage.getItem('mode');
-if(mode === null){
+if((mode === null) || (mode === 'day')){
     setTheme('day');
 }else{
-    setTheme(mode);
+    themeToggler();
 }
 
 function themeToggler(){
@@ -48,5 +48,3 @@ function setTheme(mode){
     }
     localStorage.setItem("mode",mode);
 }
-
-console.log(localStorage.getItem('theme'));
