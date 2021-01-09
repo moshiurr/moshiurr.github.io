@@ -206,7 +206,7 @@ a {
 /* Home-page section */
 
 .home-container {
-
+    opacity: 1; 
 }
 
 .intro-text {
