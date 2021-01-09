@@ -16,6 +16,7 @@
 
 body {
     background: var(--bgColor);
+    transition: all 0.3s ease;
 }
 
 .nav-container {

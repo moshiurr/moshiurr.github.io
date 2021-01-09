@@ -21,15 +21,32 @@ function burgerToggler(){
 }
 
 //change the theme of the website
+let mode = localStorage.getItem('mode');
+if(mode === null){
+    setTheme('day');
+}else{
+    setTheme(mode);
+}
+
 function themeToggler(){
     moon.classList.toggle("moon-container-active");
 
-    if(root.style.getPropertyValue("--bgColor") === "#0F2027"){
-        root.style.setProperty("--bgColor","#ece9e6");
-        root.style.setProperty("--textColor","black");
-
+    if(moon.classList.contains("moon-container-active")){
+        setTheme('night');
     }else {
-        root.style.setProperty("--bgColor","#0F2027");
-        root.style.setProperty("--textColor","white"); 
+        setTheme('day');
     }
 }
+
+function setTheme(mode){
+    if(mode === 'night'){
+        root.style.setProperty("--bgColor","#0F2027");
+        root.style.setProperty("--textColor","white"); 
+    }else {
+        root.style.setProperty("--bgColor","#ece9e6");
+        root.style.setProperty("--textColor","black");
+    }
+    localStorage.setItem("mode",mode);
+}
+
+console.log(localStorage.getItem('theme'));
