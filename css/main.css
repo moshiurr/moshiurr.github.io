@@ -1,6 +1,8 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yellowtail&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 /* Global Variables*/
 :root {
     --bgColor:  #ece9e6; ;
@@ -17,14 +19,17 @@
 body {
     background: var(--bgColor);
     transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
+
+
 
 .nav-container {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid var(--textColor);    
+    /* border: 1px solid var(--textColor);     */
 }
 
 a {
