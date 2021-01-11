@@ -243,6 +243,44 @@ span {
 .intro-image {
     width: 40%;
     height: 3rem;
-    /* background-color: black; */
-    /* border: 1px solid coral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo-me {
+    display: block;
+    margin: 0 auto;
+    height: 25em;
+    width: 40%;
+    object-fit: cover;
+    border: 2px solid var(--textColor);
+}
+
+@media screen and (max-width: 768px){
+    .home-container {
+        height: auto;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .intro-text {
+        width: 70%;
+        font-size: 30px;
+        height: auto;
+    }
+
+    .intro-text button {
+        margin-top: 25px;
+    }
+
+    .intro-image {
+        width: 70%;
+        height: auto;
+    }
+
+    #photo-me {
+        width: 80%;
+        height: 20em;
+    }
 }
