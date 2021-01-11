@@ -243,6 +243,6 @@ span {
 .intro-image {
     width: 40%;
     height: 3rem;
-    background-color: black;
+    /* background-color: black; */
     /* border: 1px solid coral; */
 }
