@@ -270,6 +270,10 @@ span {
         height: auto;
     }
 
+    h2 {
+        font-size: 24px;
+    }
+
     .intro-text button {
         margin-top: 25px;
     }
@@ -284,3 +288,5 @@ span {
         height: 20em;
     }
 }
+
+/* About page Section */
