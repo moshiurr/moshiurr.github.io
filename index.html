@@ -11,16 +11,16 @@
 </head>
 <body>
     <!-- For navbar -->
-    <div class="nav-container">
+    <div class="nav-container main">
         <div class="logo">
             <a href="./index.html">Moshiur Rahman</a>
         </div>
         <div class="nav-links">
             <ul class="links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="social-links">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Landing Page -->
-    <div class="home-container">
+    <div class="home-container main">
         <div class="intro-text">
             <h1>Hi, <br> I am <span id="intro-name"> Moshiur </span></h1>
             <h2>A Software Developer</h2>
@@ -59,19 +59,18 @@
     </div>
 
     <!-- About Page -->
-    <div class="about-container"></div>
+    <div class="about-container main" id="about"></div>
 
     <!-- Skills Page -->
-    <div class="skills_section">
+    <div class="skills_section main" id="skills">
         <div class="section-title">
             <h1>Skills</h1>
         </div>
         <div class="skills_container">
-            <div class="skills-left">
-                <div>
+                <!-- <div>
                     <h2 class="skills-sub-title">Professional skills</h2>
                 <p class="skills-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sit! Saepe, earum obcaecati nam laborum incidunt nobis.</p>
-                </div> 
+                </div>  -->
                 <div class="skills-data">
                     <div class="skills-names">
                         <i class="fab fa-java skills-icon"></i>
@@ -116,24 +115,37 @@
                     </div>
                     <div class="skills-bar css3_bar"></div>
                 </div>
-                
-               
-            </div>
-            <div class="skills-right">
 
             </div>
         </div>
     </div>
 
     <!-- Projects page -->
-    <div class="project-container"></div>
+    <div class="project-container main" id="project"></div>
 
     <!-- contact page -->
-    <div class="contact-container"></div>
+    <div class="contact-container main" id="contact">
+        <h1 class="section-title" style="text-align: center;">Contact</h1>
+            <form id="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea name="message" class="input-field"></textarea>
+                    
+                <input id="submit-button" type="submit" value="Send">
+            </form>
+    </div>
 
     <!-- Footer -->
 
-    <footer class="footer-section">
+    <footer class="footer-section main">
         <div class="ft-name">
             <a href="./index.html">Moshiur Rahman</a>
         </div>

@@ -216,11 +216,11 @@ a {
 /* Home-page section */
 
 .home-container {
-    opacity: 1;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .intro-text {
@@ -304,16 +304,21 @@ a {
 /* Skills page section */
 
 .skills_section {
-    /* width: 100%; */
-    row-gap: 2rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
-
+.skills_container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 .skills-sub-title {
@@ -325,6 +330,7 @@ a {
 }
 
 .skills-data {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -332,7 +338,8 @@ a {
     padding: .5rem 1rem;
     margin-bottom: 1.5rem;
     border-radius: .5rem;
-    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    /* box-shadow: 0 4px 25px rgba(14,36,49,.15); */
+    box-shadow: 0 4px 25px rgba(133, 126, 126, 0.35);
 }
 
 .skills-icon {
@@ -416,4 +423,57 @@ a {
         margin: auto 0.5rem;
     }
 
+}
+
+.main {
+    /* border: 1px solid cadetblue; */
+}
+
+.section-title {
+    margin: 2rem 0;
+}
+
+.contact-container {
+    padding: 1rem;
+}
+
+#contact-form {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--bgColor);
+    margin-bottom: 50px;
+    box-shadow: 0 4px 25px rgba(133, 126, 126, 0.35);
+}
+
+#contact-form label {
+    line-height: 2.5em;
+}
+
+#contact-form textarea {
+    min-height: 100px;
+    font: 14px;
+}
+
+.input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+#submit-button {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--bgColor);
+    background-color: var(--textColor);
+    border: none;
+    border-radius: 20px;
 }
