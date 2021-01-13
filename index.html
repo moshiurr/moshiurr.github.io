@@ -17,10 +17,10 @@
         </div>
         <div class="nav-links">
             <ul class="links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav-item" href="#about">About</a></li>
+                <li><a class="nav-item" href="#skills">Skills</a></li>
+                <li><a class="nav-item" href="#project">Projects</a></li>
+                <li><a class="nav-item" href="#contact">Contact</a></li>
             </ul>
 
             <div class="social-links">
@@ -124,23 +124,54 @@
     <div class="project-container main" id="project"></div>
 
     <!-- contact page -->
-    <div class="contact-container main" id="contact">
+    <div class="contact-section main" id="contact">
         <h1 class="section-title" style="text-align: center;">Contact</h1>
-            <form id="contact-form">
-                <label>Name</label>
-                <input class="input-field" type="text" name="name">
-
-                <label>Subject</label>
-                <input class="input-field" type="text" name="subject">
-
-                <label>Email</label>
-                <input class="input-field" type="text" name="email">
-
-                <label>Message</label>
-                <textarea name="message" class="input-field"></textarea>
-                    
-                <input id="submit-button" type="submit" value="Send">
-            </form>
+        <div class="contact-container">
+            <div class="get-in-touch-container">
+                <h3>Get in Touch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae nemo numquam vel deleniti ut repellendus hic facilis omnis repellat illo corporis sit nihil doloribus nesciunt amet, aperiam nostrum aspernatur?</p>
+    
+                <div class="info-container">
+                    <div class="info-icon"><i class="fas fa-user-circle"></i></div>
+                    <div class="info-wrap">
+                        <h4>Name</h4>
+                        <h5>Moshiur Rahman</h5>
+                    </div>
+                </div>
+                <div class="info-container">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-wrap">
+                        <h4>Address</h4>
+                        <h5>Charlottetown, PEI, CA</h5>
+                    </div>
+                </div>
+                <div class="info-container">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-wrap">
+                        <h4>Email</h4>
+                        <h5>mralif004@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <h3>Message me</h3>
+                <form id="contact-form">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
+        
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
+        
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email">
+        
+                    <label>Message</label>
+                    <textarea name="message" class="input-field"></textarea>
+                            
+                    <input id="submit-button" type="submit" value="Send">
+                </form>
+            </div>    
+        </div>
     </div>
 
     <!-- Footer -->
