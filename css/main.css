@@ -270,6 +270,7 @@ a {
         height: auto;
         flex-direction: column;
         gap: 35px;
+        padding-top: 0rem;
     }
 
     .intro-text {
