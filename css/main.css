@@ -23,6 +23,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.section-title {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+button:hover {
+    opacity: 0.7;
+}
+
 /* For nav section */
 
 .nav-container {
@@ -247,7 +259,7 @@ a {
     font-family: 'Monoton', 'cursive';
 }
 
-.intro-text button {
+.intro-text a button {
     margin-top: 50px;
     background-color: var(--textColor);
     color: var(--bgColor);
@@ -257,6 +269,7 @@ a {
     cursor: pointer;
     border: none;
 }
+
 
 .intro-image {
     width: 40%;
@@ -310,6 +323,48 @@ a {
 
 /* About page Section */
 
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-photo {
+    width: 50%;
+}
+
+.about-info {
+    text-align: center;
+}
+
+#resume-button {
+    margin-top: 2rem;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: var(--textColor);
+}
+
+#resume-button a {
+    color: var(--bgColor);
+}
+
+@media screen and (max-width: 768px){
+    .about-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
 
 /* Skills page section */
 
@@ -413,10 +468,6 @@ a {
 
 .footer-links a i {
     font-size: 1.4em;
-}
-
-.section-title {
-    margin: 2rem 0;
 }
 
 .contact-section {
