@@ -238,7 +238,7 @@ a {
 /* Home-page section */
 
 .home-container {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,6 +253,7 @@ a {
     /* align-items: center; */
     font-size: 36px;
     /* border: 1px solid blue; */
+    padding-left: 4rem;
 }
 
 #intro-name {
@@ -300,6 +301,7 @@ a {
         width: 70%;
         font-size: 30px;
         height: auto;
+        padding-left: 0;
     }
 
     h2 {
@@ -342,7 +344,9 @@ a {
 }
 
 .about-info {
-    text-align: center;
+    text-align: left;
+    width: 50%;
+    /* border: 1px solid coral; */
 }
 
 #resume-button {
@@ -363,6 +367,15 @@ a {
     .about-container {
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .about-photo {
+        width: 80%;
+    }
+
+    .about-info {
+        width: 80%;
+        text-align: center;
     }
 }
 
