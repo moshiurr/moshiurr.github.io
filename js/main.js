@@ -5,12 +5,19 @@ const themeLine = document.querySelector(".theme-line");
 const moon = document.querySelector(".moon-container");
 const root = document.documentElement;
 
+const mailButton = document.querySelector("#submit-button");
+
 //all event listener
 burger.addEventListener("click", burgerToggler);
 
 moon.addEventListener("click", themeToggler);
 themeLine.addEventListener("click", themeToggler);
 
+
+mailButton.addEventListener('click', (e)=> {
+    e.preventDefault();
+    sendMail();
+});
 
 //all the function
 
@@ -48,3 +55,23 @@ function setTheme(mode){
     }
     localStorage.setItem("mode",mode);
 }
+
+function sendMail() {
+    console.log("Email sending");
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "edwinjarvis004@gmail.com",
+        Password : "L!o Mess!",
+        To : "edwinjarvis004@gmail.com",
+        From : "edwinjarvis004@gmail.com",
+        Subjct : "Test",
+        Body : "Sending from JS. <br><br>That was easy!!!"
+    }).then((message)=>{
+        alert("Mail send Successfully.")
+    });
+
+    console.log("Email sent.");  
+}
+
+
+
